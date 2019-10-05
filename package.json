@@ -6,6 +6,13 @@
   "repository": "git@github.com:ElijahKotyluk/vue-tradez.git",
   "author": "Elijah Kotyluk <elijah@elijahkotyluk.com>",
   "license": "MIT",
+  "scripts": {
+    "serve:dev": "webpack-dev-server --mode development --progress --hot --open",
+    "build": "webpack --mode production --progress",
+    "lint": "wotan",
+    "lint:fix": "wotan --fix",
+    "commit": "yarn git-cz"
+  },
   "devDependencies": {
     "@fimbul/valtyr": "^0.21.0",
     "@fimbul/ve": "^0.21.0",
